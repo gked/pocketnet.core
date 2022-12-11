@@ -3,7 +3,7 @@
  </p>
 
  <h1 align="center">Pocketnet Core</h1>
- 
+
 ![GitHub](https://img.shields.io/github/license/pocketnetteam/pocketnet.api)
 ![contributors](https://img.shields.io/github/contributors/pocketnetteam/pocketnet.core)
 ![last_commit](https://img.shields.io/github/last-commit/pocketnetteam/pocketnet.core)
@@ -19,7 +19,7 @@ nodes on a blockchain with no centralized server. All revenue is split
 between node operators and content creators. Node operators stake Pocketcoin
 in order to mint blocks with rewards and transactions fees. Half of rewards
 in each block go to content creators based on ratings their content gathers
-from users. [Read more in the article.](https://pocketnet.app/docs/Pocketnet%20Whitepaper%20Draft%20v2.pdf)
+from users. [Read more in Bastyon Whitepaper.](https://bastyon.com/docs/Bastyon_whitepaper.pdf)
 
 # What should I know?
 This software allows you to participate in the work of the blockchain network - [`https://pocketnet.app/help`](https://pocketnet.app/help?page=faq).
@@ -96,7 +96,7 @@ $ pocketcoind --help
     ```
     # List all snapshots available at
     https://snapshot.pocketnet.app
-    
+
     # Latest snapshot archive
     https://snapshot.pocketnet.app/latest.tgz
     ```
@@ -118,35 +118,35 @@ $ pocketcoind --help
     ```shell
     # for unix
     $ cd ~/.pocketcoin/
-     
+
     # or for windows
     $ cd %APPDATA%\Pocketcoin\
-    
+
     # or for macos
     $ cd ~/Library/Application\ Support/Pocketcoin/
-     
+
     # delete exists DB
     $ rm -r ./blocks
     $ rm -r ./chainstate
     $ rm -r ./indexes
     $ rm -r ./pocketdb
     $ rm -r ./checkpoints
-    
+
     # unpack new checkpoint DB
-    
+
     # for tar.gz archive
     $ tar -xzf latest.tgz -C ./
-    
+
     # for bz2 archive
     $ tar -xjf latest.tgz -C ./
-    
+
     # create wallets directory if not exist
     $ mkdir wallets
     ```
 5. Make sure the folders and files inside are not set to "read only" (grant permissions to all files for current user via ```chmod -R <username> ~/.pocketcoin/``` unix command)
 6. Start the node.
 
-**VERY IMPORTANT**: save the **wallet.dat** file or **wallets/** files before cleaning the directory. It is recommended to even save these files somewhere for backup. 
+**VERY IMPORTANT**: save the **wallet.dat** file or **wallets/** files before cleaning the directory. It is recommended to even save these files somewhere for backup.
 
 # Get address (for PKOIN receiving) and private key info (Linux, Docker)
 ```shell
@@ -178,4 +178,3 @@ information or see https://opensource.org/licenses/Apache-2.0.
 support@pocketnet.app - general questions
 
 core@pocketnet.app - blockchain nodes
-
